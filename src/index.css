@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Georgia:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600;700;900&family=Courier+New:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", serif;
+  --font-sans: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Courier New", "JetBrains Mono", monospace;
+}
+
+/* Custom Scrollbar styled for print editorial look */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F2EFE9;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+}
+
+body {
+  background-color: #F9F7F2;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+  overflow-y: auto;
+}
+
+/* Editorial aesthetic core elements */
+.editorial-border-double {
+  border-bottom: 3px double #1A1A1A;
+}
+
+.editorial-viewport {
+  border: 12px solid #1A1A1A;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #F9F7F2;
+}
+
+.editorial-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #1A1A1A;
+  font-size: 10px;
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #1A1A1A;
+  box-shadow: 4px 4px 0px #1A1A1A;
+}
+
+.editorial-btn {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid #1A1A1A;
+  transition: all 0.2s ease;
+}
+
+.editorial-btn:hover {
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+}
+
+.editorial-btn-secondary {
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 1px solid #1A1A1A;
+  transition: all 0.2s ease;
+}
+
+.editorial-btn-secondary:hover {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+}
+
+/* Custom fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

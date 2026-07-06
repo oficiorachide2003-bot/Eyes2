@@ -1,0 +1,6 @@
+{
+  "name": "Eyes Open MZ",
+  "description": "Uma rede social futurista moçambicana com histórias temporárias (Eyes 42h), publicações com rotação 4D e perfis personalizados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
